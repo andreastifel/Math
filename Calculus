@@ -2,3 +2,11 @@ import math
 
 #square root
 math.sqrt(3)/2
+
+#exponentials/functions
+def exp(x):
+  #return1 + x + x**2/2 + x**3/6 + .... = exp(x)=1+x+x^2/2+x^3/6+x^4/24+⋯+x^n/n!+⋯
+  return sum([  x**n/math.factorial(n) for n in range(0, 100)])
+
+exp(1)
+2.718281828...
